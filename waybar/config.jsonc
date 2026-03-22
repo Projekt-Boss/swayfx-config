@@ -25,7 +25,7 @@
     "modules-right": [
 	// prevents a computer session from becoming "idle," stopping automatic actions like screen dimming, locking, or system sleep
         //"idle_inhibitor",
-        "pulseaudio",
+        //"pulseaudio",
         "network",
 //	"bluetooth",
         "cpu",
@@ -134,7 +134,8 @@
         "interval": 1
     },
     "memory": {
-        "format": "{}% ",
+        //"format": "{}% ",
+        "format": "{}% ",
 	"format-alt": "{used}/{total}GiB ", 
         "interval": 2
     },
@@ -158,7 +159,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+	"format-icons": ["󰃞", "󰃟", "󰃠", "󰃡", "󰃢"]
     },
     "battery": {
         "states": {
@@ -192,14 +193,16 @@
     "network": {
 	"interval": 10,
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{signalStrength}%  ",
-        // "format-wifi": "{essid} ({signalStrength}%) ",
+        //  "format-wifi": "{signalStrength}%  ",
+        "format-wifi": "  {frequency}GHz",
+	// "format-wifi": "{essid} ({signalStrength}%) ",
 	"format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "󰤮",
 	"format-disabled": "{ifname} disabled",
-        "format-alt": "{ipaddr}/{cidr} {frequency}GHz"
+        //"format-alt": "{ipaddr}/{cidr} {frequency}GHz"
+        "format-alt": "{ipaddr}/{cidr}"
     },
     "bluetooth": {
 	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system

@@ -1,7 +1,12 @@
 [general]
 # This imports the Tokyo Night colors. 
 # Make sure the file exists at this exact path!
-import = ["~/.config/alacritty/tokyo-night.toml"]
+#import = ["~/.config/alacritty/nord.toml"]
+#import = ["~/.config/alacritty/dracula"]
+#import = ["~/.config/alacritty/solarized-dark.toml"]
+#import = ["~/.config/alacritty/tokyo-night.toml"]
+import = ["~/.config/alacritty/tokyo-night-storm.toml"]
+#import = ["~/.config/alacritty/tokyo-night-enhanced.toml"]
 
 # Reloads the terminal instantly when you save this file
 live_config_reload = true
