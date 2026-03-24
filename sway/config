@@ -22,7 +22,10 @@ include ~/.config/sway/theme.conf
 
 ### Output configuration
 #
-output * bg /home/zphish/Pictures/vector-wallpaper.png fill
+#output * bg /home/zphish/Pictures/vector-wallpaper.png fill
+output * bg /home/zphish/Pictures/wallpapers/Kath.png fill
+bindsym $mod+w exec ~/.config/sway/changeWallpaper.sh
+
 
 #
 # Example configuration:
@@ -113,7 +116,9 @@ exec swayosd-server
 
 assign [app_id="firefox"] workspace 2
 assign [app_id="org.kde.elisa"] workspace 4
-assign [app_id="org.kde.dolphin"] workspace 5 
+assign [app_id="org.kde.dolphin"] workspace 5
+
+#for_window [app_id="org.kde.elisa"] floating enable 
 
 
 

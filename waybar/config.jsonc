@@ -107,8 +107,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         }
     },
     "tray": {
@@ -122,9 +122,9 @@
     "clock": {
         // "timezone": "America/New_York",
 	//"format": "{:%a, %d.%m  %H:%M}",
-        "format": "{:%d.%m  %H:%M}", 
+        "format": "󰸗 {:%d.%m   %H:%M}", 
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt> ",
-        "format-alt": "{:%d-%m-%y}"
+        "format-alt": "󰸗 {:%d-%m-%y}"
     },
     "cpu": {
         "format": "{usage}%  ",
@@ -135,7 +135,7 @@
     },
     "memory": {
         //"format": "{}% ",
-        "format": "{}% ",
+        "format": "{}%  ",
 	"format-alt": "{used}/{total}GiB ", 
         "interval": 2
     },
@@ -234,8 +234,8 @@
     },
     "disk": {
         "interval": 30,
-        "format": "{percentage_used}% 󰋊",
-	"format-alt": "{used}/{free} 󰋊",
+        "format": "{percentage_used}% 󰋊 ",
+	"format-alt": "{used}/{free} 󰋊 ",
         "path": "/"
     },
     "custom/media": {
