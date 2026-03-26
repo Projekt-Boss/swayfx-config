@@ -19,22 +19,13 @@ This repository collects my configuration files for the desktop, including:
 Add screenshots of your desktop here so people can see the theme, bar, launcher, and terminal at a glance.
 
 ![Desktop overview](Pictures/waybar-blue-white.png)
+
 ![Waybar and wallpaper](Pictures/improved-fastfetch.png)
+
 ![Wofi launcher](Pictures/wofi.png)
+
 ![Wofi launcher](Pictures/wofi-transparent.png)
 
-
-## Screenshot gallery
-
-
-```md
-![waybar](Pictures/waybar-blue-white.png)
-```
-
-
-```md
-![Sway desktop](Pictures/improved-fastfetch.png)
-```
 
 ---
 
