@@ -11,10 +11,8 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu env QT_QPA_PLATFORM=wayland QT_SCALE_FACTOR=1.25 QT_AUTO_SCREEN_SCALE_FACTOR=0 wofi --show drun | xargs swaymsg exec --
-
-# SwayOSD needs a "server" running in the background to catch the volume signals and draw the pop-up
-#exec swayosd-server i can leave this at the bottom of this config file
+#set $menu env QT_QPA_PLATFORM=wayland QT_SCALE_FACTOR=1 QT_AUTO_SCREEN_SCALE_FACTOR=0 wofi --show drun | xargs swaymsg exec --
+set $menu env QT_QPA_PLATFORM=wayland wofi --show drun | xargs swaymsg exec --
 
 include ~/.config/sway/keybinds.conf
 include ~/.config/sway/theme.conf
@@ -22,7 +20,7 @@ include ~/.config/sway/theme.conf
 
 ### Output configuration
 #
-#output * bg /home/zphish/Pictures/vector-wallpaper.png fill
+#output * bg /home/zphish/Pictures/wallpapers/vector-wallpaper.png fill
 output * bg /home/zphish/Pictures/wallpapers/Kath.png fill
 bindsym $mod+w exec ~/.config/sway/changeWallpaper.sh
 
@@ -30,10 +28,12 @@ bindsym $mod+w exec ~/.config/sway/changeWallpaper.sh
 #
 # Example configuration:
 #
-output HDMI-A-1 resolution 2560x1440@60Hz scale 1 
+output HDMI-A-1 resolution 2560x1440@60Hz scale 1.25 
 
 # HiDPI scale option (try out 1.25)
-exec_always gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+#exec_always gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+#exec_always export GDK_SCALE 1
+#exec_always export GDK_DPI_SCALE 1.25
 
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -113,12 +113,15 @@ exec swayosd-server
 
 ##############
 # window rules
+#exec_always GDK_SCALE=1 GDK_DPI_SCALE=1.25 flatpak run io.bassi.Amberol
+
+for_window [app_id="org.kde.elisa"] floating enable, resize set width 2300 px height 1300 px,  move position center 
+
 
 assign [app_id="firefox"] workspace 2
 assign [app_id="org.kde.elisa"] workspace 4
-assign [app_id="org.kde.dolphin"] workspace 5
+assign [app_id="thunar"] workspace 5
 
-#for_window [app_id="org.kde.elisa"] floating enable 
 
 
 

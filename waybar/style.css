@@ -3,29 +3,29 @@
 * {
     /*font-family: 'Inter', 'Font Awesome 6 Free', sans-serif;*/
     font-family: 'JetBrains Mono Nerd Font', 'monospace';
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 window#waybar {
     background-color: rgba(30, 30, 46, 0.0); /* Transparent; */
     color: #cdd6f4; /* Soft white/grey text */
-    border-radius: 12px;
-    margin: 8px 10px;
+    border-radius: 8px;
+    margin: 6px 8px;
 }
 
 /* Base style for EVERY module - Unified look */
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #tray, #mode, #idle_inhibitor, #scratchpad, #bluetooth, #workspaces {
-    padding: 0 12px;
+    padding: 0 8px;
     margin: 6px 3px;
-    border-radius: 8px; /* Slightly squarer pills look more modern */
+    border-radius: 6px; /* Slightly squarer pills look more modern */
     background-color: #313244; /* Single, subtle grey background for all */
     color: #cdd6f4; /* Unified text color */
 }
 
 /* WORKSPACES */
 #workspaces {
-    padding: 0px 8px; /* Tighter padding for the workspace container */
+    padding: 0px 6px; /* Tighter padding for the workspace container */
 }
 
 #workspaces button {

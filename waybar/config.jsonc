@@ -29,7 +29,7 @@
         "memory",
         "temperature",
 	"temperature#gpu",         // GPU block
- 	"disk",
+ //	"disk",
         "backlight"
          //"custom/power"
     ],
